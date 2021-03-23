@@ -5,35 +5,80 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/dc80972f73.js" crossorigin="anonymous"></script>
   <title>Reservia</title>
 </head>
 
 <body>
   <header>
-    
-    <h1>Reservia</h1>
+    <div class="logo">
+      <img src="/public/images/logo/Reservia.svg" alt="logo">
+    </div>
+  
+      <a href="#"  class="signup">S'inscrire</a>
     
       <nav>
         <ul>
-          <li>Hébergements</li>
-          <li>Activités</li>
-          <li>S'inscrire</li>
+          <li><a href="#lodging">Hébergements</a> </li>
+          <li><a href="#activity">Activités</a></li>
         </ul>
       </nav>
-    
   </header>
-  
-    <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
-    
-    <h2>H&bergements à Marseille</h2>
-    <h2>Les plus populaires</h2>
-    <h2>Activités à Marseille</h2>
 
+    
+  <section>
+    <div id="research">
+      <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+      <p>En plein centre ville ou en pleine nature</p>
+        <form>
+            <i class="fas fa-map-marker-alt"></i>
+            <input type="search" placeholder="Marseille, FRANCE" />
+            <i class="fas fa-search"> </i>
+        </form>
+    </div id="filters">
+      <h2>Filtres</h2>
+      <ul class="iconfilter">
+        <li><i class="fas fa-money-bill-wave"></i><span> Économique</span></li>
+        <li><i class="fas fa-child"></i><span>Familial</span></li>
+        <li><i class="fas fa-heart"></i><span>Romantique</span></li>
+        <li><i class="fas fa-dog"></i><span>Animaux autorisé</span></li>
+      </ul>
+    <div >
+
+    </div>
+  </section>
+
+  <section id="lodging">
+    <div class="main">
+      <div >
+        <h2>Hébergements à Marseille</h2>
+        <p>Afficher plus</p>
+     </div>
+      <div class="popular">
+        <h3>Les plus populaires</h2>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="activity">
+
+      <h2>Activités à Marseille</h2>
+  </section>
+      
   <footer>
 
-    <h2>A propos</h2>
-    <h2>Nos Hébergements</h2>
-    <h2>Assistance</h2>
+    <div>
+      <h2>A propos</h2>
+    </div>
+    <div>
+      <h2>Nos Hébergements</h2>
+    </div>
+    <div>
+      <h2>Assistance</h2>
+    </div>
+
+    
     
   </footer>
 
