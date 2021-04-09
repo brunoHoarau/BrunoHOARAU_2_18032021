@@ -76,6 +76,7 @@ h3{
 
 form {
   width: 100%;
+  max-height: 10em;
   
 }
   
@@ -130,7 +131,7 @@ li>a:hover{
   }
   
   .searchbar>input{
-    width: 30vw;
+    /* width: 30vw; */
     border: none;
     text-align: center;
   }
@@ -152,9 +153,9 @@ li>a:hover{
     border-radius:  10px;
   }
   
-  .fa-search{
-    display: none;
-    padding: 5%;
+  .isearch{
+    position: absolute;
+    clip-path: circle(0%);
   }
 
   .pswipe{
@@ -320,6 +321,12 @@ aside{
 
 }
 
+
+.cadrelodging{
+  overflow: hidden;
+  border-radius: 10px;
+  width: -moz-available;
+}
 
 .cadrelodging>.description{
   margin: 0.5em;
@@ -494,7 +501,7 @@ aside{
 
 
 .actimg6{
-  height: 74%;
+  height: 83%;
 
 }
 
