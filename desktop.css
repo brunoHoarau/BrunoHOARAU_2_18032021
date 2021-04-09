@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
 
+
+@media screen and (min-device-width : 1024px ) {
+  
+
 /* 
 ** Remove decoration & other
 */
 
 *{
   font-family: "Raleway", sans-serif;
-  font-size: 1em;
 }
 
 ul {
@@ -21,9 +24,14 @@ li{
 
 a{
   text-decoration: none;
+  text-align: justify;
   color: black;
 }
 
+.pdescrib{
+  font-size: smaller;
+  margin: 1em 0 0.5em 0;
+}
 
 /*
 ** général
@@ -62,17 +70,17 @@ h2{
 }
 
 h3{
-  font-size: 0.8em;
   margin: 0 0 -0.5em 0;
 }
  
 
-form{
-width: 100%;  
+form {
+  width: 100%;
+  
 }
   
   header, #research, #activity{
-    margin: 0 4% 0 4%;
+    margin: 0 5% 0 5%;
 
   }
   
@@ -116,18 +124,15 @@ li>a:hover{
 
 }
 
-  /* .searchbar{
-    width: 25%;
-    max-width: 30%;
-    border: 2px solid #f2f2f2 ;
-    border-radius: 0 12px 12px 0 ;
-  
-  } */
+  .searchbar{
+    border: 2px solid #f2f2f2;
+    border-radius: 12px;
+  }
   
   .searchbar>input{
+    width: 30vw;
     border: none;
     text-align: center;
-  
   }
   
   ::placeholder{
@@ -138,20 +143,23 @@ li>a:hover{
   
   .fa-map-marker-alt{
     background-color:  #F2F2F2;
-    padding: 5%;
-    border-radius:  10px 0 0 10px;
-  
+    padding: 6% 5% 5% 5%;
+    /* border-radius: 10px; */
   }
 
-  input{
-    width: inherit;
+  .swipe{
+    background-color:  #0065FC;
+    border-radius:  10px;
   }
   
   .fa-search{
-    background-color:  #0065FC;
+    display: none;
     padding: 5%;
-    border-radius:  10px;
-  
+  }
+
+  .pswipe{
+    padding: 0 1vw 0 1vw;
+    color: white;
   }
   
   .iconfilter>li{
@@ -213,34 +221,48 @@ li>a:hover{
 ** lodging - pop - aside
 */
 #lodging{
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
-
+  justify-content: space-between;
+  margin: 2% 4%;
 }
 
 aside{
-  width: auto;
+  width: 50%;
   background-color: #f2f2f2;
-  justify-content: space-around;
-  align-items: center;
-  padding: 0 3% 3% 3%;
-  margin: 0% 5% 0 5%;
+  padding: 0;
+  margin: 0;
   border-radius: 15px;
+  flex-direction: column;
+
 }
 
 .popular{
-  flex-wrap: nowrap;
-  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  padding: 0vw 0 2vw 0;
+  flex-direction: column;
+
 }
 
-/* modifier */
-.boxpop{ 
+.h2pop{
+  flex-basis: unset;
   width: 100%;
-  /* height: 15vw; */
+  display: flex;
+  justify-content: space-around;
+  padding: 0 0 4%;
+
+}
+
+.boxpop{
+  width: 80%;
+  height: 8vw;
+  min-height: 100px;
   background-color: white;
-  margin: 0.4vw;
-  border-radius: 10px;
-  border: 1px solid white;
+  border-radius: 15px;
+  border: 5px solid white;
+  margin: 0 auto;
+
 }
 
 .description{
@@ -249,27 +271,21 @@ aside{
 }
 
 .about{
-   margin: 0 3% 0 0;
-}
-
-.pdescrib{
-  font-size: smaller;
-  margin: 1em 0 0.5em 0;
+   margin: 0;
 
 }
 
 .cadrepop{
-  flex-basis: 80%;
-  margin-right: -20%;
+  margin-right: -11%;
 
 }
 
 .imgpop{
   width: 65%;
-  height: 100%;
   object-fit: cover;
   border-radius: 10px 0px 0px 10px;
   margin-right: -150px;
+
 } 
 
 /**
@@ -277,43 +293,47 @@ aside{
 **/
 
 .main{
+  width: 100vw;
   background-color: #f2f2f2;
-  /* max-width: 75%; */
-  margin: 2% 5% 0% 5%;
+  height: 45vw;
+  max-height: 50%;
+  margin: 0% 3% 0% 0%;
   justify-content: space-around;
+
 }
 
-.basis100{
-  flex-basis: 100%;
+.h2lodging{
+  flex-basis: unset;
+  width: 100%;
+  padding: 0 0 0 3%;
+
 }
 
-
-/* modifier */
 .boxlodging{
-  width: 30%;
+  width: 27%;
   flex-direction: row;
   background-color: white;
-  margin: 0 0 3% 0;
-  border-radius: 10px;
-  border: 1px solid white;
+  margin:  0 auto auto;
+  border-radius: 15px;
+  border: 5px solid white;
   box-shadow: 1em 1em 2em #F2F2F2;
 
 }
 
 
 .cadrelodging>.description{
-  margin: 0.5em 1em;
+  margin: 0.5em;
+
 }
 
 .boxlodging>.description>.stars{
   margin: 0.5em 0 0 0;
+
 }
-
-
 
 .imglodging{
   width: 100%;
-  max-height: 15vw;
+  max-height: 8vw;
   object-fit: cover;
   border-radius: 10px 10px 0px 0px;
 
@@ -332,34 +352,40 @@ aside{
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   height: 32.5vw;
+
   }
   
   a{
     text-decoration: none;
     color: black;
+
   }
   
   #activity{
     display: flex;
     flex-direction:column;
-    margin: 0 4% ;
-  
+    margin-bottom: 5%;
+
   }
   
   .actimg6{
     height: 75%;
+
   }
   
   .actimg6{
     height: 74%;
+
   }
   
   .actimg6{
     height: 75%;
+
   }
   
   .boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
     flex-basis: 23%;
+
   }
   
   .boxactivity2, .boxactivity4{
@@ -376,13 +402,16 @@ aside{
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
+
   }
+
   .frame1 {
     height: 53%;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
+
   }
   
   .frame2{
@@ -391,10 +420,12 @@ aside{
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
+  
   }
   
   .frame1, .frame4{
     margin-bottom: 10%;
+  
   }
   
   .frame4{
@@ -405,6 +436,7 @@ aside{
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
+  
   }
   
   .frame5{
@@ -413,6 +445,7 @@ aside{
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
+  
   }
   
   
@@ -429,6 +462,7 @@ aside{
   width: 100%;
   height: 88%;
   object-fit: cover;
+
 }
 
 
@@ -437,26 +471,31 @@ aside{
   width: 100%;
   height: 81%;
   object-fit: cover;
+
 }
 
 .actimg2{
   height: 85%;
+
 }
 
 .actimg2, .actimg6{
   width: 100%;
   object-fit: cover;
+
 }
 
 .actimg3{
   width: 100%;
   height: 74%;
   object-fit: cover;
+
 }
 
 
 .actimg6{
   height: 74%;
+
 }
 
 
@@ -465,6 +504,7 @@ figcaption{
   font-weight: bold;
   font-size: 1em;
   margin: 5% 0 0 5%;
+  
 }
 
 /*
@@ -477,6 +517,4 @@ footer{
 
 }
 
-.footdiv>a{
-  margin: 0 0 0.5em 0;
 }

@@ -4,13 +4,7 @@
 **/
 
 
-@media ( max-device-width: 480px ){
-
-  header, .main, aside, #research, #activity, footer{
-    padding: 0 5% 0 5%;
-    margin-right: 0;
-  
-  }
+@media screen and ( max-device-width: 767px ){
 
   header{
     display: flex;
@@ -18,14 +12,12 @@
   }
 
   header>img{
-    margin: auto auto auto 0;
-  
+    margin: 5% auto auto 5%;
   }
   
   .signup{
     order: 1;
     align-self: center;
-  
   }
   
   nav>ul{
@@ -44,15 +36,6 @@
     color: #0065FC;
   
   }
-
-
-
-  .searchbar{
-    width: 25%;
-    border: 2px solid #f2f2f2 ;
-    border-radius: 12px ;
-  
-  }
   
   
   ::placeholder{
@@ -67,12 +50,19 @@
     border-radius:  10px 0 0 10px;
   
   }
-  
+  .swipe{
+    background-color:  #0065FC;
+    border-radius:  10px;
+    padding: 5%;
+  }
+
   .fa-search{
     background-color:  #0065FC;
-    padding: 5%;
-    border-radius:  10px;
   
+  }
+
+  .pswipe{
+    display: none;
   }
   
   
@@ -88,9 +78,7 @@
   
   aside{
     flex-wrap: wrap;
-    width: auto;
     justify-content: space-between;
-    margin-right: 0;
   }
   
   .popular{
@@ -113,10 +101,9 @@
     
   .signup{
     order: 0;
-    margin-right: 20px;
+    margin: 5% 5% 0 0;
     font-weight: bold;
     color: #0065FC;
-  
   }
     
   nav{
@@ -146,13 +133,17 @@
   /**
   ** research mobile version
   **/
+
+  form{
+    width: 100%;
+  }
   
   input{
     padding: 2vw;
     width: 100%;
-    /* font-size: 1.5rem; */
   
   }
+
   .searchbar{
     width: 100%;
     border: 2px solid #f2f2f2 ;
@@ -163,12 +154,7 @@
   /**
   ** Iconfilter mobile version
   **/
-  
-  /* .iconfilter{
-    display: flex;
-    flex-wrap: wrap;
-  
-  } */
+
   
   .iconfilter>li{
     justify-content: space-around;
@@ -237,21 +223,12 @@
   }
   
   .main{
+    margin: 0;
+    padding: 0 5%;
     background-color: white;
   
   }
   
-  /* .boxlodging{
-    flex-direction: column;
-    width: 87vw;
-    background-color: white;
-    padding: 1vw 0 1vw 1vw;
-    margin: 0 0 1em 0;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 1em 1em 2em #F2F2F2;
-  
-  } */
 
   .boxlodging{
     width: 100%;
@@ -295,18 +272,14 @@
   }
   
   .boxpop{
-    padding: 1%;
     margin: 0 0 5% 0;
     box-shadow:  1px 1px 2em #F2F2F2;
     display: flex;
     flex-direction: row;
-    width: 97%;
     height: 36vw;
     background-color: white;
-    padding: 1vw;
     border-radius: 10px;
-    border: 1px solid white;
-    
+    border: 3px solid white;
   }
 
 .description{
@@ -321,7 +294,6 @@
 .cadrepop{
   flex-basis: 85%;
   margin-right: -20%;
-
 }
   
 .imgpop{
@@ -336,60 +308,133 @@
   ** activity mobile version
   **/
   
-  #activity{
-    margin-bottom: 10vw;
-  }
-  
-  .boxactivity{
-    /* flex-direction: column;
-    width: 97%; */
-    background-color: white;
-    padding: 1%;
-    margin: 0 0 1em 0;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 1em 1em 2em #F2F2F2;
-  
-  }
-  
-  .cadreactivity{
-    max-height: 140%;
-  }
+.containactivity{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Raleway", sans-serif;
+  font-size: 1em;
+  height: 100%;
+}
+    
+a{
+  text-decoration: none;
+  color: black;
+}
 
-  .activity2, .activity1{
+#activity{
+  display: flex;
+  flex-direction:column;
+  margin: 0 5%;
+}
 
-    flex-direction: column;
-  }
-  .activity2{
-    flex-direction: column;
-  }
+.actimg6{
+  height: 75%;
+}
+
+.actimg6{
+  height: 74%;
+}
+
+.actimg6{
+  height: 75%;
+}
+
+.boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
+  /* flex-basis: 23%; */
+  margin: 0 0 10% 0;
+}
+
+.boxactivity2, .boxactivity4{
+  display:flex;
+  flex-direction:column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.frame0, .frame1, .frame2, .frame3, .frame4, .frame5{
+  height: 50vw;
+
+.frame1, .frame4{
+  margin: 0 0 10% 0;
+}
+    
+    
+    
+    
+    
+figure{
+  margin: 0;
+  height: 90%;
+
+}
+
+
+.actimg1, .actimg4 {
+  width: 100%;
+  height: 72%;
+  object-fit: cover;
+
+}
+
+
+
+.actimg5{
+    width: 100%;
+    height: 81%;
+    object-fit: cover;
   
-  .imgactivity1, .imgactivity2{
+}
+
+.actimg2{
+    height: 80%;
+  
+}
+
+.actimg2, .actimg6{
     width: 100%;
     object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
   
-  }
+}
+
+.actimg3{
+    width: 100%;
+    height: 77%;
+    object-fit: cover;
   
-  .cadreactivity>.description{
-    margin: 1em 1em 2em 1em;
+}
+
+
+.actimg6{
+    height: 73%;
   
-  }
+}
+
+
+figcaption{
+    background-color: white;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 5% 0 0 6%;
   
-  /**
+}
+
+/**
   ** Footer mobile version
   **/
-  
-  footer{
-    padding: 2em 0 5em 2em;
-    background-color:  #F2F2F2;
-  }
-  
-  footer>div{
-    flex-direction: column;
-  
-  }
 
+footer{
+    padding: 5% 0 50% 5%;
+    background-color:  #F2F2F2;
+    margin: 0 0 20% 0;
   
+  }
+  
+
+  .footdiv{
+    flex-direction: column;
+
+  }
   
   }
