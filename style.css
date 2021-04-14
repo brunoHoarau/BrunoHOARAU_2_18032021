@@ -24,6 +24,9 @@ a{
   color: black;
 }
 
+.scale:hover {
+  transform: scale(1.1);
+}
 
 /*
 ** général
@@ -45,6 +48,14 @@ a{
 
 .fa-chart-li{
   float: right;
+}
+
+.colorblue1{
+  color: #0065FC;
+}
+
+.colorgrey{
+  color: #f2f2f2;
 }
 
 /*
@@ -113,21 +124,11 @@ nav>ul>li{
 
 li>a:hover{
   color: #0065FC;
-
 }
-
-  /* .searchbar{
-    width: 25%;
-    max-width: 30%;
-    border: 2px solid #f2f2f2 ;
-    border-radius: 0 12px 12px 0 ;
-  
-  } */
   
   .searchbar>input{
+    padding: 5%;
     border: none;
-    text-align: center;
-  
   }
   
   ::placeholder{
@@ -287,6 +288,8 @@ aside{
   flex-basis: 100%;
 }
 
+.showmore {margin: 3%;}
+
 
 /* modifier */
 .boxlodging{
@@ -299,7 +302,6 @@ aside{
   box-shadow: 1em 1em 2em #F2F2F2;
 
 }
-
 
 .cadrelodging>.description{
   margin: 0.5em 1em;
@@ -347,15 +349,7 @@ aside{
   }
   
   .actimg6{
-    height: 75%;
-  }
-  
-  .actimg6{
-    height: 74%;
-  }
-  
-  .actimg6{
-    height: 75%;
+    height: 83%;
   }
   
   .boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
@@ -370,14 +364,14 @@ aside{
     
   }
   
-  .frame0, .frame3{
+  .frame1, .frame4{
     height: 100%;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0em 1em 1em #f2f2f2;
     overflow: hidden;
   }
-  .frame1 {
+  .frame2 {
     height: 53%;
     border-radius: 15px;
     background-color: white;
@@ -385,7 +379,7 @@ aside{
     overflow: hidden;
   }
   
-  .frame2{
+  .frame3{
     height: 37%;
     border-radius: 15px;
     background-color: white;
@@ -393,11 +387,11 @@ aside{
     overflow: hidden;
   }
   
-  .frame1, .frame4{
+  .frame2, .frame5{
     margin-bottom: 10%;
   }
   
-  .frame4{
+  .frame5{
     width: 100%;
     height: 44%;
     margin: 0;
@@ -407,7 +401,7 @@ aside{
     overflow: hidden;
   }
   
-  .frame5{
+  .frame6{
     height: 47%;
     border-radius: 15px;
     background-color: white;
@@ -450,22 +444,24 @@ aside{
 
 .actimg3{
   width: 100%;
-  height: 74%;
+  height: 75%;
   object-fit: cover;
 }
 
 
 .actimg6{
-  height: 74%;
+  /* height: 74%; */
 }
 
 
 figcaption{
   background-color: white;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 5% 0 0 5%;
 }
+
+
 
 /*
 ** footer

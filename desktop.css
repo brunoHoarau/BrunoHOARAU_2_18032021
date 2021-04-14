@@ -24,7 +24,6 @@ li{
 
 a{
   text-decoration: none;
-  text-align: justify;
   color: black;
 }
 
@@ -55,6 +54,9 @@ a{
   float: right;
 }
 
+.scale:hover {
+  transform: scale(1.1);
+}
 /*
 ** research
 */
@@ -105,7 +107,7 @@ header>img{
 .signup{
   order: 1;
   align-self: center;
-
+  color: #0065FC;
 }
 
 nav>ul{
@@ -122,18 +124,14 @@ nav>ul>li{
 
 li>a:hover{
   color: #0065FC;
+  border-top: 2px solid #0065FC;
+  padding: 2vw 0 0 0;
 
 }
 
   .searchbar{
     border: 2px solid #f2f2f2;
     border-radius: 12px;
-  }
-  
-  .searchbar>input{
-    /* width: 30vw; */
-    border: none;
-    text-align: center;
   }
   
   ::placeholder{
@@ -257,7 +255,7 @@ aside{
 
 .boxpop{
   width: 80%;
-  height: 8vw;
+  height: 10vw;
   min-height: 100px;
   background-color: white;
   border-radius: 15px;
@@ -277,7 +275,7 @@ aside{
 }
 
 .cadrepop{
-  margin-right: -11%;
+  /* margin-right: -11%; */
 
 }
 
@@ -296,18 +294,18 @@ aside{
 .main{
   width: 100vw;
   background-color: #f2f2f2;
-  height: 45vw;
+  height: 49vw;
   max-height: 50%;
   margin: 0% 3% 0% 0%;
   justify-content: space-around;
-
+  border-radius: 15px;
 }
 
 .h2lodging{
   flex-basis: unset;
   width: 100%;
   padding: 0 0 0 3%;
-
+  margin: 3% auto 2%;
 }
 
 .boxlodging{
@@ -359,7 +357,7 @@ aside{
   font-family: "Raleway", sans-serif;
   font-size: 1em;
   height: 32.5vw;
-
+  margin-top: 2%;
   }
   
   a{
@@ -403,7 +401,7 @@ aside{
     
   }
   
-  .frame0, .frame3{
+  .frame1, .frame4{
     height: 100%;
     border-radius: 15px;
     background-color: white;
@@ -412,7 +410,7 @@ aside{
 
   }
 
-  .frame1 {
+  .frame2 {
     height: 53%;
     border-radius: 15px;
     background-color: white;
@@ -421,7 +419,7 @@ aside{
 
   }
   
-  .frame2{
+  .frame3{
     height: 37%;
     border-radius: 15px;
     background-color: white;
@@ -430,12 +428,12 @@ aside{
   
   }
   
-  .frame1, .frame4{
+  .frame2, .frame5{
     margin-bottom: 10%;
   
   }
   
-  .frame4{
+  .frame5{
     width: 100%;
     height: 44%;
     margin: 0;
@@ -446,7 +444,7 @@ aside{
   
   }
   
-  .frame5{
+  .frame6{
     height: 47%;
     border-radius: 15px;
     background-color: white;
@@ -509,7 +507,7 @@ aside{
 figcaption{
   background-color: white;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 0.8em;
   margin: 5% 0 0 5%;
 
 }

@@ -266,21 +266,28 @@
   /**
   ** aside popular mobile version
   **/
+
+  aside{
+    padding: initial;
+
+  }
   
   .popular{
+    /* width: 100%; */
     flex-direction: column;
-  
   }
   
   .boxpop{
+    width: inherit;
     margin: 0 0 5% 0;
     box-shadow:  1px 1px 2em #F2F2F2;
-    display: flex;
-    flex-direction: row;
+    /* display: flex; */
+    /* flex-direction: row; */
     height: 36vw;
     background-color: white;
     border-radius: 10px;
     border: 3px solid white;
+    justify-content: space-between;
   }
 
 .description{
@@ -293,12 +300,13 @@
 }
 
 .cadrepop{
-  flex-basis: 85%;
-  margin-right: -20%;
+  width: 45%;
+  flex-basis: unset;
+  margin-right: 5%;
 }
   
 .imgpop{
-  width: 55%;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px 0px 0px 10px;
@@ -330,21 +338,14 @@ a{
   margin: 0 5%;
 }
 
-.actimg6{
-  height: 75%;
-}
 
-.actimg6{
-  height: 74%;
-}
-
-.actimg6{
+/* .actimg6{
   height: 75%;
-}
+} */
 
 .boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
   /* flex-basis: 23%; */
-  margin: 0 0 10% 0;
+  margin: 0 0 5% 0;
 }
 
 .boxactivity2, .boxactivity4{
@@ -354,12 +355,12 @@ a{
   height: 100%;
 }
 
-.frame0, .frame1, .frame2, .frame3, .frame4, .frame5{
+.frame1, .frame2, .frame3, .frame4, .frame5, .frame6{
   height: 50vw;
 }
 
-.frame1, .frame4{
-  margin: 0 0 10% 0;
+.frame2, .frame5{
+  margin: 0 0 5% 0;
 }
     
     
@@ -372,7 +373,7 @@ figure{
 
 }
 
-
+/* 
 .actimg1, .actimg4 {
   width: 100%;
   height: 72%;
@@ -411,8 +412,16 @@ figure{
 .actimg6{
     height: 73%;
   
+} */
+.actimg2, .actimg3, .actimg5, .actimg6{
+  width: 100%;
+  height: 81%;
+  object-fit: cover;
 }
 
+.actimg1, .actimg4 {
+  height: 73%;
+}
 
 figcaption{
     background-color: white;
@@ -427,9 +436,8 @@ figcaption{
   **/
 
 footer{
-    padding: 5% 0 50% 5%;
+    padding: 5% 0 20% 5%;
     background-color:  #F2F2F2;
-    margin: 0 0 20% 0;
   
   }
   
