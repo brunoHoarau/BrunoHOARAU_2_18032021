@@ -24,9 +24,11 @@ a{
   color: black;
 }
 
-.scale:hover {
-  transform: scale(1.1);
+.pdescrib{
+  font-size: smaller;
+  margin: 1em 0 0.5em 0;
 }
+
 
 /*
 ** général
@@ -54,13 +56,18 @@ a{
   color: #0065FC;
 }
 
+.scale:hover {
+  transform: scale(1.1);
+}
+
 .colorgrey{
   color: #f2f2f2;
 }
 
-/*
-** research
-*/
+.basis100{
+  flex-basis: 100%;
+}
+
 
 h1{
   font-size: 1.5em;
@@ -96,7 +103,7 @@ width: 100%;
 
 header{
   margin-top: 2%;
-  display: flex;
+  font-weight: 500;
 
 }
 header>img{
@@ -107,6 +114,7 @@ header>img{
 .signup{
   order: 1;
   align-self: center;
+  font-weight: bold;
 
 }
 
@@ -120,11 +128,13 @@ nav>ul>li{
   margin-right: 2vw;
 }
 
-
-
 li>a:hover{
   color: #0065FC;
 }
+
+/**
+** Research général css
+**/
   
   .searchbar>input{
     padding: 5%;
@@ -211,8 +221,9 @@ li>a:hover{
 
   
 /*
-** lodging - pop - aside
+** pop / aside général css
 */
+
 #lodging{
   flex-wrap: wrap;
   flex-direction: row;
@@ -234,14 +245,12 @@ aside{
   justify-content: space-between;
 }
 
-/* modifier */
 .boxpop{ 
   width: 100%;
-  /* height: 15vw; */
   background-color: white;
   margin: 0.4vw;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 3px solid white;
 }
 
 .description{
@@ -270,7 +279,6 @@ aside{
   height: 100%;
   object-fit: cover;
   border-radius: 10px 0px 0px 10px;
-  margin-right: -150px;
 } 
 
 /**
@@ -279,26 +287,21 @@ aside{
 
 .main{
   background-color: #f2f2f2;
-  /* max-width: 75%; */
   margin: 2% 5% 0% 5%;
   justify-content: space-around;
 }
 
-.basis100{
-  flex-basis: 100%;
+.showmore {
+  margin: 3%;
 }
 
-.showmore {margin: 3%;}
-
-
-/* modifier */
 .boxlodging{
   width: 30%;
   flex-direction: row;
   background-color: white;
   margin: 0 0 3% 0;
   border-radius: 10px;
-  border: 1px solid white;
+  border: 5px solid white;
   box-shadow: 1em 1em 2em #F2F2F2;
 
 }
@@ -322,7 +325,7 @@ aside{
 }
 
 /**
-** Activity
+** Activity generel css
 **/
 
 
@@ -409,10 +412,7 @@ aside{
     overflow: hidden;
   }
   
-  
-  
-  
-  
+
   figure{
     margin: 0;
     height: 90%;
@@ -447,12 +447,6 @@ aside{
   height: 75%;
   object-fit: cover;
 }
-
-
-.actimg6{
-  /* height: 74%; */
-}
-
 
 figcaption{
   background-color: white;

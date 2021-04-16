@@ -6,114 +6,27 @@
 
 @media screen and ( max-device-width: 767px ){
 
-  header{
-    display: flex;
   
-  }
-
-  header>img{
-    margin: 5% auto auto 5%;
-  }
-  
-  .signup{
-    order: 1;
-    align-self: center;
-  }
-  
-  nav>ul{
-    display: flex;
-    flex-direction: row;
-    
-  }
-  
-  nav>ul>li{
-    margin-right: 2vw;
-  }
-  
-  
-  
-  li>a:hover{
-    color: #0065FC;
-  
-  }
-  
-  
-  ::placeholder{
-    font-weight: bold;
-    color: black;
-  
-  }
-  
-  .fa-map-marker-alt{
-    background-color:  #F2F2F2;
-    padding: 5%;
-    border-radius:  10px 0 0 10px;
-  
-  }
-  .swipe{
-    background-color:  #0065FC;
-    border-radius:  10px;
-    padding: 5%;
-  }
-
-  .fa-search{
-    background-color:  #0065FC;
-  
-  }
-
-  .pswipe{
-    display: none;
-  }
-  
-  
-  /*
-  ** lodging - pop
-  */
-  
-   #lodging{
-    max-width: 150vw;
-    background-color: #F2F2F2;
-  }
-  
-  
-  aside{
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .popular{
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-
   /**
   **header mobile version
   **/
   
   header{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin: auto;
-  
   }
-    
+  
+  header>img{
+    margin: 5% auto auto 5%;
+  }
+ 
   .signup{
     order: 0;
-    margin: 5% 5% 0 0;
-    font-weight: bold;
-    color: #0065FC;
+    margin: 5% 4% 0 0;
+
   }
     
   nav{
     flex-basis: 100%;
-  
-  }
-  
-  nav>ul{
-    margin-bottom: 0;
-  
   }
   
   nav>ul>li{
@@ -146,58 +59,28 @@
 
   .searchbar{
     width: 100%;
-    border: 2px solid #f2f2f2 ;
-    border-radius: 12px ;
-  
+    border: 2px solid #f2f2f2;
+    border-radius: 12px;
   }
-  
-  /**
-  ** Iconfilter mobile version
-  **/
 
+.swipe{
+  background-color:  #0065FC;
+  border-radius:  10px;
+  padding: 5%;
+}
+
+
+.pswipe{
+    display: none;
+}
   
-  .iconfilter>li{
-    justify-content: space-around;
-    border: 2px solid lightgray;
-    margin: 5px 10px 5px 0;
-    padding:  0px 0px 0px 0px;
-    border-radius: 25px;
-    
-  }
   
-  .iconfilter>li>i{
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC ;
-    margin: -2px;
-  
-  }
-  
-  li>span{
-    font-weight: bold;
-    margin: 15px;
-  
-  }
-  
-    .info{
-    flex-direction: row;
+.info{
     justify-content: space-around;
   
-  }
+}
   
   .info>i{
-    width: 22px;
-    height: 22px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC ;
-    margin: 0 10px 0 0;
     padding: 0 3px 0 3px;
   
   }
@@ -211,43 +94,38 @@
     background-color: #DEEBFF
   
   }
+
+
+  /*
+  ** lodging - pop / aside
+  */
+ 
   
   /**
   ** lodging mobile version
   **/
   
    #lodging{
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: column-reverse;
-  
   }
   
   .main{
     margin: 0;
     padding: 0 5%;
     background-color: white;
-  
   }
   
 
   .boxlodging{
     width: 100%;
-    flex-direction: row;
-    background-color: white;
     padding: 1%;
-    border-radius: 10px;
-    border: 1px solid white;
-    box-shadow: 1em 1em 2em #F2F2F2;
-  
   }
 
   .cadrelodging>.description{
     margin: 1% 2%;
   }
-  
-  .boxlodging>.description>.stars{
-    margin: 0.5em 0 0 0;
-  }
+
   
   .cadrelodging{
     max-height: 120%;
@@ -255,45 +133,38 @@
   }
   
   .imglodging{
-    width: 100%;
     max-height: 30vw;
-    object-fit: cover;
-    border-radius: 10px 10px 0px 0px;
-  
+    
   }
   
   
   /**
   ** aside popular mobile version
   **/
-
+   
+  #lodging{
+    max-width: 150vw;
+    background-color: #F2F2F2;
+  }
+  
+  
   aside{
-    padding: initial;
-
+    flex-wrap: wrap;
   }
   
   .popular{
-    /* width: 100%; */
     flex-direction: column;
+  }
+
+  aside{
+    padding: initial;
   }
   
   .boxpop{
     width: inherit;
     margin: 0 0 5% 0;
-    box-shadow:  1px 1px 2em #F2F2F2;
-    /* display: flex; */
-    /* flex-direction: row; */
     height: 36vw;
-    background-color: white;
-    border-radius: 10px;
-    border: 3px solid white;
-    justify-content: space-between;
   }
-
-.description{
-  flex-direction: column;
-  justify-content: space-around;
-}
 
 .about{
    margin: 0 3vw 0 0;
@@ -307,10 +178,6 @@
   
 .imgpop{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 0px 0px 10px;
-  margin-right: -130px;
 } 
   
   /**
@@ -318,41 +185,17 @@
   **/
   
 .containactivity{
-  display: flex;
-  flex-wrap: nowrap;
   flex-direction: column;
-  justify-content: space-between;
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
   height: 100%;
 }
     
-a{
-  text-decoration: none;
-  color: black;
-}
-
 #activity{
-  display: flex;
-  flex-direction:column;
-  margin: 0 5%;
+  margin: 0 4%;
 }
 
-
-/* .actimg6{
-  height: 75%;
-} */
 
 .boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
-  /* flex-basis: 23%; */
-  margin: 0 0 5% 0;
-}
-
-.boxactivity2, .boxactivity4{
-  display:flex;
-  flex-direction:column;
-  justify-content: space-between;
-  height: 100%;
+  margin: 0 0 4% 0;
 }
 
 .frame1, .frame2, .frame3, .frame4, .frame5, .frame6{
@@ -362,61 +205,10 @@ a{
 .frame2, .frame5{
   margin: 0 0 5% 0;
 }
-    
-    
-    
-    
-    
-figure{
-  margin: 0;
-  height: 90%;
-
-}
-
-/* 
-.actimg1, .actimg4 {
-  width: 100%;
-  height: 72%;
-  object-fit: cover;
-
-}
 
 
-
-.actimg5{
-    width: 100%;
-    height: 81%;
-    object-fit: cover;
-  
-}
-
-.actimg2{
-    height: 80%;
-  
-}
-
-.actimg2, .actimg6{
-    width: 100%;
-    object-fit: cover;
-  
-}
-
-.actimg3{
-    width: 100%;
-    height: 77%;
-    object-fit: cover;
-  
-}
-
-
-.actimg6{
-    height: 73%;
-  
-} */
 .actimg2, .actimg3, .actimg5, .actimg6{
-  width: 100%;
   height: 81%;
-  object-fit: cover;
 }
 
 .actimg1, .actimg4 {
@@ -424,11 +216,7 @@ figure{
 }
 
 figcaption{
-    background-color: white;
-    font-weight: bold;
     font-size: 1em;
-    margin: 5% 0 0 6%;
-  
 }
 
 /**
@@ -437,7 +225,6 @@ figcaption{
 
 footer{
     padding: 5% 0 20% 5%;
-    background-color:  #F2F2F2;
   
   }
   
@@ -447,4 +234,5 @@ footer{
 
   }
   
+
   }

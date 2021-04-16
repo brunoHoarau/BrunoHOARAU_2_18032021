@@ -1,55 +1,28 @@
 /**
-** tablet
+** tablet version css
 **/
 
 @media screen and (min-device-width: 768px ) and (max-device-width: 1023px){
 
-  header, #research, #activity{
-    margin: 0 3% 0 3%;
-    height: 100%;
-  }
-  
-  /*
-**
-** header
+
+/*
+** header tablet versiob
 **
 */
-
-
-header{
-  margin-top: 2%;
-  display: flex;
-
-}
-header>img{
-  margin: auto auto auto 0;
-
-}
-
-.signup{
-  order: 1;
-  align-self: center;
-
-}
-
-nav>ul{
-  display: flex;
-  flex-direction: row;
-  
-}
 
 nav>ul>li{
   margin-right: 2vw;
 }
 
-
-
 li>a:hover{
-  color: #0065FC;
   border-top: 2px solid #0065FC;
   padding: 2vw 0 0 0;
 
 }
+
+/**
+** Research tablet css
+**/
 
 .searchbar{
   width: 40vw;
@@ -58,150 +31,52 @@ li>a:hover{
   border-radius: 12px;
 }
 
-::placeholder{
-  font-weight: bold;
-  color: black;
-
-}
-
-.fa-map-marker-alt{
-  background-color:  #F2F2F2;
-  padding: 5%;
-  border-radius:  10px 0 0 10px;
-
-}
-
 .swipe{
   background-color:  #0065FC;
   border-radius:  10px;
   padding: 5%;
 }
-.fa-search{
-  background-color:  #0065FC;
 
-}
 .pswipe{
   display: none;
 }
 
-.iconfilter>li{
-  justify-content: space-around;
-  border: 2px solid lightgray;
-  margin: 5px 10px 5px 0;
-  border-radius: 25px;
-  
-}
-
-.iconfilter>li>i{
-  width: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #DEEBFF;
-  border-radius: 50%;
-  color: #0065FC ;
-  margin: -2px;
-
-}
-
-li>span{
-  font-weight: bold;
-  margin: 15px;
-
-}
-
-  .info{
-  flex-direction: row;
-
-}
-
-.info>i{
-  display: flex;
-  width: 22px;
-  height: 22px;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #DEEBFF;
-  border-radius: 50%;
-  color: #0065FC ;
-  margin: 0 10px 0 0;
-
-}
-
-.info>p{
-  margin-top: 0.5%;
-
-}
-
-.iconfilter>li:hover{
-  border: 2px solid #0065FC;
-  color: #0065FC;
-}
 
   
 /*
-** lodging - pop - aside
+** lodging - pop / aside tablet version
 */
+
+
 #lodging{
-  flex-wrap: wrap;
   flex-direction: column-reverse;
-  
 
 }
 
 aside{
   flex-wrap: wrap;
-  background-color: #f2f2f2;
-  width: auto;
-  justify-content: space-around;
-  align-items: center;
   margin: 0% 3% 0 3%;
 }
 
-.popular{
-  flex-wrap: nowrap;
-  justify-content: space-between;
-}
-
-/* modifier */
 .boxpop{
   height: 15vw;
-  /* width: 100%; */
   margin: 0.4vw;
-  background-color: white;
-  border-radius: 10px;
   border: 5px solid white;
   flex-basis: 30%;
 }
 
-.description{
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.about{
-   margin: 0 3% 0 0;
-}
 
 .pdescrib{
   margin: 0.5em 0;
 }
 
 .cadrepop{
-  flex-basis: 80%;
   margin: 0% -15% 0% 0%;
 }
 
-.imgpop{
-  width: 65%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 10px 0px 0px 10px;
-  margin-right: -150px;
-} 
 
 /**
-** lodging main
+** lodging main tablet version
 **/
 
 .main{
@@ -212,44 +87,11 @@ aside{
   border-radius: 15px;
 }
 
-.basis100{
-  flex-basis: 100%;
-}
-
-
-/* modifier */
-.boxlodging{
-  width: 30%;
-  height: fit-content;
-  flex-direction: row;
-  background-color: white;
-  margin: 0 0 3% 0;
-  border-radius: 10px;
-  border: 5px solid white;
-  box-shadow: 1em 1em 2em #F2F2F2;
-}
-
-
-.cadrelodging>.description{
-  margin: 0.5em 1em;
-}
-
-.boxlodging>.description>.stars{
-  margin: 0.5em 0 0 0;
-}
-
-
-.imglodging{
-  width: 100%;
-  max-height: 15vw;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-
-}
-
+/**
+** Activity tablet version
+**/
 
 .containactivity{
-  justify-content: space-between;
   height: 40vw;
 }
 
@@ -277,7 +119,9 @@ aside{
   justify-content: space-between;
 }
 
-#activity{padding: 0 0 5%;}
+#activity{
+  padding: 0 0 5%;
+}
 
 .boxactivity{
   background-color: white;
@@ -304,8 +148,6 @@ footer{
   padding: auto;
   flex-direction: row;
   justify-content: space-around;
-  background-color:  #F2F2F2;
-
 }
 
 .footdiv{

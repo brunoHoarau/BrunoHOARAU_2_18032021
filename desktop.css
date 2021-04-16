@@ -2,131 +2,31 @@
 
 
 @media screen and (min-device-width : 1024px ) {
+
+
   
-
-/* 
-** Remove decoration & other
-*/
-
-*{
-  font-family: "Raleway", sans-serif;
-}
-
-ul {
-  list-style:none;
-  margin-left:0;
-  padding-left:0;
-}
-
-li{
-  list-style: none;
-}
-
-a{
-  text-decoration: none;
-  color: black;
-}
-
-.pdescrib{
-  font-size: smaller;
-  margin: 1em 0 0.5em 0;
-}
-
-/*
-** général
-*/
-
-.flex{
-  display: flex;
-}
-
-.fw{
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.fnow{
-  display: flex;
-  flex-wrap: nowrap;
-}
-
-.fa-chart-li{
-  float: right;
-}
-
-.scale:hover {
-  transform: scale(1.1);
-}
-/*
-** research
-*/
-
-h1{
-  font-size: 1.5em;
-  margin-right: 10vw;
-
-}
-
-h2{
-  font-size: 1.3em;
-}
-
-h3{
-  margin: 0 0 -0.5em 0;
-}
- 
-
-form {
-  width: 100%;
-  max-height: 10em;
-  
-}
-  
-  header, #research, #activity{
-    margin: 0 5% 0 5%;
-
-  }
   
   /*
 **
-** header
+** header desktop version
 **
 */
 
-
-header{
-  margin-top: 2%;
-  display: flex;
-
-}
-header>img{
-  margin: auto auto auto 0;
-
-}
-
-.signup{
-  order: 1;
-  align-self: center;
-  color: #0065FC;
-}
-
-nav>ul{
-  display: flex;
-  flex-direction: row;
-  
-}
-
-nav>ul>li{
-  margin-right: 2vw;
-}
-
-
-
 li>a:hover{
-  color: #0065FC;
   border-top: 2px solid #0065FC;
   padding: 2vw 0 0 0;
 
+}
+
+
+/*
+** research desktop version
+*/
+
+
+form {
+  max-height: 10em;
+  
 }
 
   .searchbar{
@@ -134,16 +34,9 @@ li>a:hover{
     border-radius: 12px;
   }
   
-  ::placeholder{
-    font-weight: bold;
-    color: black;
-  
-  }
-  
   .fa-map-marker-alt{
-    background-color:  #F2F2F2;
     padding: 6% 5% 5% 5%;
-    /* border-radius: 10px; */
+
   }
 
   .swipe{
@@ -160,84 +53,25 @@ li>a:hover{
     padding: 0 1vw 0 1vw;
     color: white;
   }
-  
-  .iconfilter>li{
-    justify-content: space-around;
-    border: 2px solid lightgray;
-    margin: 5px 10px 5px 0;
-    border-radius: 25px;
-    
-  }
-  
-  .iconfilter>li>i{
-    width: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC ;
-    margin: -2px;
-  
-  }
-  
-  li>span{
-    font-weight: bold;
-    margin: 15px;
-  
-  }
-  
-    .info{
-    flex-direction: row;
-  
-  }
-  
-  .info>i{
-    display: flex;
-    width: 22px;
-    height: 22px;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #DEEBFF;
-    border-radius: 50%;
-    color: #0065FC ;
-    margin: 0 10px 0 0;
-  
-  }
-  
-  .info>p{
-    margin-top: 0.5%;
-  
-  }
-  
-  .iconfilter>li:hover{
-    border: 2px solid #0065FC;
-    color: #0065FC;
-  }
 
   
 /*
-** lodging - pop - aside
+** pop - aside desktop version
 */
 #lodging{
   flex-wrap: nowrap;
-  flex-direction: row;
   justify-content: space-between;
   margin: 2% 4%;
 }
 
 aside{
   width: 50%;
-  background-color: #f2f2f2;
   padding: 0;
   margin: 0;
-  border-radius: 15px;
   flex-direction: column;
-
 }
 
 .popular{
-  width: 100%;
   height: 100%;
   padding: 0vw 0 2vw 0;
   flex-direction: column;
@@ -257,47 +91,24 @@ aside{
   width: 80%;
   height: 10vw;
   min-height: 100px;
-  background-color: white;
   border-radius: 15px;
   border: 5px solid white;
   margin: 0 auto;
-
-}
-
-.description{
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .about{
    margin: 0;
-
 }
-
-.cadrepop{
-  /* margin-right: -11%; */
-
-}
-
-.imgpop{
-  width: 65%;
-  object-fit: cover;
-  border-radius: 10px 0px 0px 10px;
-  margin-right: -150px;
-
-} 
 
 /**
-** lodging main
+** lodging main desktop version
 **/
 
 .main{
   width: 100vw;
-  background-color: #f2f2f2;
   height: 49vw;
   max-height: 50%;
   margin: 0% 3% 0% 0%;
-  justify-content: space-around;
   border-radius: 15px;
 }
 
@@ -310,13 +121,10 @@ aside{
 
 .boxlodging{
   width: 27%;
-  flex-direction: row;
-  background-color: white;
-  margin:  0 auto auto;
+  margin: 0 auto auto;
   border-radius: 15px;
   border: 5px solid white;
   box-shadow: 1em 1em 2em #F2F2F2;
-
 }
 
 
@@ -328,174 +136,21 @@ aside{
 
 .cadrelodging>.description{
   margin: 0.5em;
-
 }
 
-.boxlodging>.description>.stars{
-  margin: 0.5em 0 0 0;
-
-}
 
 .imglodging{
-  width: 100%;
   max-height: 8vw;
-  object-fit: cover;
-  border-radius: 10px 10px 0px 0px;
-
 }
 
 /**
-** Activity
+** Activity desktop version
 **/
 
 
 .containactivity{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  font-family: "Raleway", sans-serif;
-  font-size: 1em;
-  height: 32.5vw;
   margin-top: 2%;
   }
-  
-  a{
-    text-decoration: none;
-    color: black;
-
-  }
-  
-  #activity{
-    display: flex;
-    flex-direction:column;
-    margin-bottom: 5%;
-
-  }
-  
-  .actimg6{
-    height: 75%;
-
-  }
-  
-  .actimg6{
-    height: 74%;
-
-  }
-  
-  .actimg6{
-    height: 75%;
-
-  }
-  
-  .boxactivity1, .boxactivity2, .boxactivity3, .boxactivity4{
-    flex-basis: 23%;
-
-  }
-  
-  .boxactivity2, .boxactivity4{
-    display:flex;
-    flex-direction:column;
-    justify-content: space-between;
-    height: 100%;
-    
-  }
-  
-  .frame1, .frame4{
-    height: 100%;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0em 1em 1em #f2f2f2;
-    overflow: hidden;
-
-  }
-
-  .frame2 {
-    height: 53%;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0em 1em 1em #f2f2f2;
-    overflow: hidden;
-
-  }
-  
-  .frame3{
-    height: 37%;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0em 1em 1em #f2f2f2;
-    overflow: hidden;
-  
-  }
-  
-  .frame2, .frame5{
-    margin-bottom: 10%;
-  
-  }
-  
-  .frame5{
-    width: 100%;
-    height: 44%;
-    margin: 0;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0em 1em 1em #f2f2f2;
-    overflow: hidden;
-  
-  }
-  
-  .frame6{
-    height: 47%;
-    border-radius: 15px;
-    background-color: white;
-    box-shadow: 0em 1em 1em #f2f2f2;
-    overflow: hidden;
-  
-  }
-  
-  
-  
-  
-  
-  figure{
-    margin: 0;
-    height: 90%;
-  }
-
-
-.actimg1, .actimg4 {
-  width: 100%;
-  height: 88%;
-  object-fit: cover;
-
-}
-
-
-
-.actimg5{
-  width: 100%;
-  height: 81%;
-  object-fit: cover;
-
-}
-
-.actimg2{
-  height: 85%;
-
-}
-
-.actimg2, .actimg6{
-  width: 100%;
-  object-fit: cover;
-
-}
-
-.actimg3{
-  width: 100%;
-  height: 74%;
-  object-fit: cover;
-
-}
 
 
 .actimg6{
@@ -504,30 +159,18 @@ aside{
 }
 
 
-figcaption{
-  background-color: white;
-  font-weight: bold;
-  font-size: 0.8em;
-  margin: 5% 0 0 5%;
-
-}
-
 /*
-** footer
+** footer desktop version
 */
 
 footer{
   flex-direction: row;
-  background-color:  #F2F2F2;
-
+  
 }
 
 .footdiv{
-  display: flex;
   flex-direction: column;
   margin: auto;
-
-
 }
 
 }
