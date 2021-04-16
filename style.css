@@ -292,7 +292,8 @@ aside{
 }
 
 .showmore {
-  margin: 3%;
+  height: 0%;
+  margin: 0 3%;
 }
 
 .boxlodging{
@@ -339,16 +340,12 @@ aside{
   height: 32.5vw;
   }
   
-  a{
-    text-decoration: none;
-    color: black;
-  }
   
   #activity{
     display: flex;
     flex-direction:column;
     margin: 0 4% ;
-  
+    padding: 0 0 5%;
   }
   
   .actimg6{

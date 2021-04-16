@@ -1,5 +1,6 @@
-/**
-** tablet version css
+/** --------------------------------------------------
+** for tablet version --------------------------------
+** ---------------------------------------------------
 **/
 
 @media screen and (min-device-width: 768px ) and (max-device-width: 1023px){
@@ -117,10 +118,6 @@ aside{
 .activity2{
   flex-direction: column;
   justify-content: space-between;
-}
-
-#activity{
-  padding: 0 0 5%;
 }
 
 .boxactivity{
