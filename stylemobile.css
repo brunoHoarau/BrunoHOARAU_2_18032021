@@ -38,7 +38,7 @@
     margin-right: 0;
   }
   
-  li:hover{
+  .linav:hover{
     border-bottom: 3px solid #0065FC;
   
   }
@@ -90,10 +90,6 @@
   
   }
   
-  .iconfilter>li:hover{
-    background-color: #DEEBFF
-  
-  }
 
 
   /*

@@ -13,7 +13,7 @@
 **
 */
 
-li>a:hover{
+.linav>a:hover{
   border-top: 2px solid #0065FC;
   padding: 2vw 0 0 0;
 
@@ -43,6 +43,7 @@ form {
   .swipe{
     background-color:  #0065FC;
     border-radius:  10px;
+    padding: 5% 2%;
   }
   
   .isearch{

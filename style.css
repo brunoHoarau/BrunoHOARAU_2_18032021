@@ -147,7 +147,7 @@ li>a:hover{
   
   }
   
-  .fa-map-marker-alt{
+  .amapmaker{
     background-color:  #F2F2F2;
     padding: 5%;
     border-radius:  10px 0 0 10px;
@@ -164,8 +164,19 @@ li>a:hover{
     border-radius:  10px;
   
   }
+
+  button{
+    background-color: transparent;
+    border: none;
+  }
+
+  .lifilter>a:hover{
+    border: 2px solid #0065FC;
+    color: #0065FC;
+    transform: scale(1.1);
+  }
   
-  .iconfilter>li{
+  .iconfilter>li>a{
     justify-content: space-around;
     border: 2px solid lightgray;
     margin: 5px 10px 5px 0;
@@ -173,7 +184,7 @@ li>a:hover{
     
   }
   
-  .iconfilter>li>i{
+  .iconfilter>li>a>i{
     width: 50px;
     display: flex;
     align-items: center;
@@ -185,7 +196,7 @@ li>a:hover{
   
   }
   
-  li>span{
+  li span{
     font-weight: bold;
     margin: 15px;
   
@@ -214,10 +225,10 @@ li>a:hover{
   
   }
   
-  .iconfilter>li:hover{
+  /* .iconfilter>li:hover{
     border: 2px solid #0065FC;
     color: #0065FC;
-  }
+  } */
 
   
 /*
@@ -256,6 +267,13 @@ aside{
 .description{
   flex-direction: column;
   justify-content: space-around;
+}
+
+.descriptionpop{
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 50%;
+
 }
 
 .about{
