@@ -43,7 +43,6 @@ form {
   .swipe{
     background-color:  #0065FC;
     border-radius:  10px;
-    padding: 5% 2%;
   }
   
   .isearch{
@@ -52,7 +51,7 @@ form {
   }
 
   .pswipe{
-    padding: 0 1vw 0 1vw;
+    padding: 1vw 2vw;
     color: white;
   }
 
