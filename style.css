@@ -314,7 +314,7 @@ aside{
 }
 
 .showmore {
-  height: 0%;
+  height: auto;
   margin: 0 3%;
 }
 

@@ -96,6 +96,10 @@
   ** lodging - pop / aside
   */
  
+  .h2pop{
+    display: flex;
+    justify-content: space-between;
+  }
   
   /**
   ** lodging mobile version
